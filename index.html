@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Board Game Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Board Game Survey Form</h1>
+      <p id="description" class="description">Thank you for taking the time to provide feedback</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name <input type="text" id="name" placeholder="Enter your name" class="block" required></label>
+          <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your email" class="block" required></label>
+          <label id="number-label" for="number">Age (optional) <input type="number" id="number" min="13" max="120" class="block" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+          <label id="dropdown-label" for="dropdown">What is your favourite board game?
+            <select id="dropdown">
+              <option value="">(select your favourite)</option>
+              <option value="1">Catan</option>
+              <option value="2">Splendor</option>
+              <option value="3">Monopoly</option>
+            </select>
+          </label>
+          <p>What do you like about board games?</p>
+            <label for="fun"><input type="radio" name="likes" value="fun" id="fun"> Fun</label>
+            <label for="interesting"><input type="radio" name="likes" value="interesting" id="interesting"> Interesting</label>
+            <label for="challenging"><input type="radio" name="likes" value="challenging" id="challenging"> Challenging</label>
+          <p>What are your favourite types of board game?</p>
+            <label for="card"><input type="checkbox" id="card" name="game-type" value="1"> Card Drafting</label>
+            <label for="ttrpg"><input type="checkbox" id="ttrpg" name="game-type" value="2"> Tabletop RPG</label>
+            <label for="resource"><input type="checkbox" id="resource" name="game-type" value="3"> Resource Gathering</label>
+            <label for="area"><input type="checkbox" id="area" name="game-type" value="4"> Area Control</label>
+        </fieldset>
+        <fieldset>
+          <label for="feedback">Anything else you'd like to add?
+            <textarea id="feedback" rows="3" cols="30" placeholder="Tell us what you think..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </main>
+  </body>
+</html>
